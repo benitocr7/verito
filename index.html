@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts-container" id="heartsContainer"></div>
+    
+    <div class="main-container">
+        <div class="header">
+            <h1>Para Ti ❤️</h1>
+            <p class="subtitle">Algo especial que quiero compartir contigo</p>
+        </div>
+
+        <div class="menu-container" id="menuContainer">
+            <div class="menu-item" data-section="carta">
+                <div class="menu-icon">💌</div>
+                <h3>Carta</h3>
+                <p>Mis sentimientos en palabras</p>
+            </div>
+            
+            <div class="menu-item" data-section="cancion">
+                <div class="menu-icon">🎵</div>
+                <h3>Canción</h3>
+                <p>Una melodía para ti</p>
+            </div>
+            
+            <div class="menu-item" data-section="porque">
+                <div class="menu-icon">💭</div>
+                <h3>Por Qué</h3>
+                <p>Las razones de mi corazón</p>
+            </div>
+            
+            <div class="menu-item" data-section="declaracion">
+                <div class="menu-icon">💖</div>
+                <h3>Declaración</h3>
+                <p>Lo que necesitas saber</p>
+            </div>
+        </div>
+
+        <!-- Sección Carta -->
+        <div class="content-section" id="carta" style="display: none;">
+            <div class="content-header">
+                <h2>💌 Mi Carta Para Ti</h2>
+                <button class="back-btn" onclick="showMenu()">← Volver</button>
+            </div>
+            <div class="letter-content">
+                <div class="letter-paper">
+                    <p class="letter-date">Con todo mi amor...</p>
+                   <p>
+            Desde que llegaste a mi vida, todo ha cambiado de una manera que no puedo explicar con palabras.
+            Eres esa luz que llegó en medio de mi oscuridad, el latido que me recuerda que mi corazón aún sabe soñar, amar, sentir…
+        </p>
+        <p>
+            Tu sonrisa tiene el poder de calmar mis tormentas, y tu risa, mi amor, es la melodía que quiero escuchar por el resto de mis días.
+            Cuando estoy a tu lado, el mundo se detiene, los miedos desaparecen, y todo lo que importa eres tú.
+        </p>
+        <p>
+            Me haces creer en lo imposible, en los cuentos de hadas, en los amores eternos. Contigo, descubrí que el amor no es solo una palabra,
+            es un refugio, un abrazo, una mirada que lo dice todo sin necesidad de hablar.
+        </p>
+        <p>
+            Gracias por existir, por mirarme como si fuera tu mundo, por tomar mi mano y quedarte, por hacerme sentir amado de una forma tan pura.
+            Eres mi todo, y si el universo me diera la oportunidad de elegir de nuevo, te elegiría a ti en cada vida, en cada historia, en cada segundo.
+        </p>
+        <p>
+            Te amo más de lo que las palabras pueden contener, más de lo que mi alma puede expresar.
+            Y cada día a tu lado es mi manera favorita de vivir.
+        </p>
+                    <p class="letter-signature">Con todo mi amor,<br>Tu amor Erick y unico hasta el fin ❤️</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Canción -->
+        <div class="content-section" id="cancion" style="display: none;">
+            <div class="content-header">
+                <h2>🎵 Una Canción Para Ti</h2>
+                <button class="back-btn" onclick="showMenu()">← Volver</button>
+            </div>
+            <div class="song-content">
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <video controls>
+                            <source src="/vives.mov" type="video/mp4">
+                        </video>
+                
+                    </div>
+                </div>
+                <div class="song-description">
+                    <p>Esta canción me recuerda a ti cada vez que la escucho es de soy luna como te gusta. Espero que cuando la oigas, sepas lo especial que eres para mí.  yo solo vi poquito de soy luna jajaja</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Por Qué -->
+        <div class="content-section" id="porque" style="display: none;">
+            <div class="content-header">
+                <h2>💭 Por Qué Eres Especial</h2>
+                <button class="back-btn" onclick="showMenu()">← Volver</button>
+            </div>
+            <div class="reasons-content">
+                <div class="reason-item">
+                    <div class="reason-number">1</div>
+                    <div class="reason-text">
+                        <h3>Tu Sonrisa</h3>
+                        <p>Iluminas cualquier habitación cuando sonríes. Es imposible no sentirse feliz a tu lado.</p>
+                    </div>
+                </div>
+                
+                <div class="reason-item">
+                    <div class="reason-number">2</div>
+                    <div class="reason-text">
+                        <h3>Tu Bondad</h3>
+                        <p>Tienes un corazón increíblemente generoso y siempre piensas en los demás antes que en ti.</p>
+                    </div>
+                </div>
+                
+                <div class="reason-item">
+                    <div class="reason-number">3</div>
+                    <div class="reason-text">
+                        <h3>Tu Inteligencia</h3>
+                        <p>Me fascina cómo ves el mundo y cómo puedes hacer que cualquier conversación sea interesante.</p>
+                    </div>
+                </div>
+                
+                <div class="reason-item">
+                    <div class="reason-number">4</div>
+                    <div class="reason-text">
+                        <h3>Tu Forma de Ser</h3>
+                        <p>Eres auténtica, única y perfecta tal como eres. No cambiaría nada de ti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección Declaración -->
+        <div class="content-section" id="declaracion" style="display: none;">
+            <div class="content-header">
+                <h2>💖 Mi Declaración</h2>
+                <button class="back-btn" onclick="showMenu()">← Volver</button>
+            </div>
+            <div class="declaration-content" id="declarationContent">
+                <div class="declaration-heart">💖</div>
+                <div class="declaration-text">
+                    <h3>Vamos hacerlo de nuevo</h3>
+                    <p>
+      He pensado mucho en ti. En todo lo que vivimos, en tus ojos cuando sonreías, en cómo tu risa era capaz de calmar mis tormentas.
+      No sabes cuánto te extraño… no solo como alguien que estuvo, sino como alguien que todavía vive en mi corazón.
+    </p>
+
+    <p>
+      Cada momento contigo fue real, fue lindo, fue amor. Y aunque la vida nos separó un poco, mi corazón nunca dejó de buscarte.
+      Porque tú no eres cualquier persona. Eres esa persona que me hizo sentir especial solo con existir.
+    </p>
+
+    <p>
+      A veces cierro los ojos y me imagino qué pasaría si volvieras. Si te abrazara de nuevo, si escuchara tu voz diciendo mi nombre con cariño.
+      Y ¿sabes? No hay un solo día en el que no desee que eso pase de verdad.
+    </p>
+
+    <p>
+      No escribo esto para incomodarte, ni para forzar nada… lo hago porque mi amor por ti es tan sincero que no quiero guardármelo más.
+      Te quiero. Con todo lo bueno, con tus risas, tus ideas, tus silencios. Te quiero con lo que fuiste, con lo que eres… y con lo que podríamos volver a ser.
+    </p>
+
+    <p>
+      Si en algún rincón de tu corazón todavía hay un pedacito para mí, solo te pido que lo escuches. Y si alguna parte de ti aún me recuerda con amor…
+      entonces, dime que sí. Dime que podemos volver a empezar. Dime que todavía hay un "nosotros".
+    </p>
+                    <p class="declaration-final">¿Quieres ser mi novia? ❤️</p>
+                    
+                    <div class="response-buttons" id="responseButtons">
+                        <button class="response-btn yes-btn" id="yesBtn" onclick="handleYesResponse()">
+                            Sí ❤️
+                        </button>
+                        <button class="response-btn no-btn" id="noBtn" onclick="handleNoResponse()">
+                            No
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mensaje de bienvenida (oculto inicialmente) -->
+            <div class="welcome-message" id="welcomeMessage" style="display: none;">
+                <div class="welcome-heart">💕</div>
+                <h2>¡Bienvenida Amor! 💖</h2>
+                <p>¡Sabía que dirías que sí! Eres la persona más especial del mundo y estoy muy feliz de que ahora seamos oficialmente novios.</p>
+                <p>Te amo mucho y prometo hacerte feliz cada día. ¡Esta es solo el comienzo de nuestra hermosa historia de amor!</p>
+                <div class="celebration-hearts" id="celebrationHearts"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
